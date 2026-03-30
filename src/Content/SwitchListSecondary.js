@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles, createMuiTheme } from 'material-ui/styles';
 import List, {
     ListItem,
     ListItemIcon,
@@ -12,7 +12,7 @@ import Switch from 'material-ui/Switch';
 import WifiIcon from 'material-ui-icons/Wifi';
 import BluetoothIcon from 'material-ui-icons/Bluetooth';
 
-const styleSheet = createStyleSheet(theme => ({
+const styleSheet = createMuiTheme(theme => ({
     root: {
         width: '100%',
         maxWidth: 360,

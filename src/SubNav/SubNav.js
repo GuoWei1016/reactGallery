@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './subnav.css';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles, createMuiTheme } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
 import Tabs, { Tab } from 'material-ui/Tabs';
 
@@ -14,7 +14,7 @@ TabContainer.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-const styleSheet = createStyleSheet(theme => ({
+const styleSheet = createMuiTheme(theme => ({
     root: {
         flexGrow: 1,
         marginTop: theme.spacing.unit * 3,
